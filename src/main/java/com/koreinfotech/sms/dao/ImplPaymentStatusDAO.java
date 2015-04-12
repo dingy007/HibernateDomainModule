@@ -59,7 +59,7 @@ public class ImplPaymentStatusDAO implements IPaymentStatusDAO{
 	@Override
 	public List<PaymentStatus> listPaymentStatus() {
 		Session session = HibernateUtils.openSession();
-		Query query = session.createQuery("from Paymentstatus");
+		Query query = session.createQuery("from PaymentStatus");
 		@SuppressWarnings("unchecked")
 		List<PaymentStatus> paymentStatusList = (ArrayList<PaymentStatus>) query.list();
 		HibernateUtils.closeSession(session);
