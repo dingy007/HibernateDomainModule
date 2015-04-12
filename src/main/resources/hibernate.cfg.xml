@@ -10,7 +10,8 @@
   <!-- Additional Property Settings -->
   <!-- <property name="connection.pool_size">10</property> -->
   <property name="hibernate.show_sql">true</property>
-  <property name="hibernate.hbm2ddl.auto">create</property>
+  <!-- <property name="hibernate.hbm2ddl.auto">create</property> -->
+  <property name="hibernate.hbm2ddl.auto">update</property>
   <property name="connect.autocommit">true</property>
   <!-- Domain Mapping for CourseStatus, PaymentStatus and PaymentMode Entities -->
   <mapping class="com.koreinfotech.sms.domain.CourseStatus"/>

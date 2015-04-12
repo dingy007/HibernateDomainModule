@@ -33,4 +33,9 @@ public class HibernateUtils {
 			session.close();
 		}
 	}
+	public static void closeSessionFactory() {
+		if (sessionFactory != null) {
+			sessionFactory.close();
+		}
+	}
 }
