@@ -13,6 +13,7 @@ public class HibernateUtils {
 		if (sessionFactory==null) {
 			Configuration configuration = new Configuration();
 			configuration.configure("hibernate.cfg.xml");
+			// /HibernateDomainModule/src/hibernate.cfg.xml
 			StandardServiceRegistryBuilder standardServiceRegistryBuilder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
 			sessionFactory = configuration.buildSessionFactory(standardServiceRegistryBuilder.build());
 		}

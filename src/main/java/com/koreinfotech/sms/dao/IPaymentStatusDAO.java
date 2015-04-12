@@ -13,14 +13,14 @@ public interface IPaymentStatusDAO {
 	/**
 	 * Add a new PaymentStatus to the existing table.
 	 * @return
-	 * @param PaymentStatus
+	 * @param paymentStatus
 	 */
-	public void addPaymentStatus(PaymentStatus PaymentStatus);
+	public void addPaymentStatus(PaymentStatus paymentStatus);
 	/**
 	 * Delete a PaymentStatus based on the PaymentStatusID field.
-	 * @param PaymentStatusId
+	 * @param paymentStatusId
 	 */
-	public boolean deletPaymentStatus(Integer PaymentStatusId);
+	public boolean deletPaymentStatus(Integer paymentStatusId);
 	/**
 	 * Retrieve all the PaymentStatus as a List&lt;>
 	 * @return List&lt;PaymentStatus>
@@ -28,16 +28,16 @@ public interface IPaymentStatusDAO {
 	public List<PaymentStatus> listPaymentStatus();
 	/**
 	 * Returns a PaymentStatus, given the Name (String) of a PaymentStatus. It may be used to search the databases.
-	 * @param PaymentStatusName
+	 * @param paymentStatusName
 	 * @return
 	 */
-	public PaymentStatus getPaymentStatusByName(String PaymentStatusName);
+	public PaymentStatus getPaymentStatusByName(String paymentStatusName);
 	
 	/**
 	 * Returns the PaymentStatus given the Id(int) value of a PaymentStatus.
-	 * @param PaymentStatusId
+	 * @param paymentStatusId
 	 * @return
 	 */
-	public PaymentStatus getPaymentStatusById(int PaymentStatusId);
+	public PaymentStatus getPaymentStatusById(int paymentStatusId);
 	
 }

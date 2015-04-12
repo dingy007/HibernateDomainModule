@@ -13,14 +13,14 @@ public interface IPaymentModeDAO {
 	/**
 	 * Add a new PaymentMode to the existing table.
 	 * @return
-	 * @param PaymentMode
+	 * @param paymentMode
 	 */
-	public void addPaymentMode(PaymentMode PaymentMode);
+	public void addPaymentMode(PaymentMode paymentMode);
 	/**
 	 * Delete a PaymentMode based on the PaymentModeID field.
-	 * @param PaymentModeId
+	 * @param paymentModeId
 	 */
-	public boolean deletPaymentMode(Integer PaymentModeId);
+	public boolean deletPaymentMode(Integer paymentModeId);
 	/**
 	 * Retrieve all the PaymentMode as a List&lt;>
 	 * @return List&lt;PaymentMode>
@@ -28,16 +28,16 @@ public interface IPaymentModeDAO {
 	public List<PaymentMode> listPaymentMode();
 	/**
 	 * Returns a PaymentMode, given the Name (String) of a PaymentMode. It may be used to search the databases.
-	 * @param PaymentModeName
+	 * @param paymentModeName
 	 * @return
 	 */
-	public PaymentMode getPaymentModeByName(String PaymentModeName);
+	public PaymentMode getPaymentModeByName(String paymentModeName);
 	
 	/**
 	 * Returns the PaymentMode given the Id(int) value of a PaymentMode.
-	 * @param PaymentModeId
+	 * @param paymentModeId
 	 * @return
 	 */
-	public PaymentMode getPaymentModeById(int PaymentModeId);
+	public PaymentMode getPaymentModeById(int paymentModeId);
 	
 }
